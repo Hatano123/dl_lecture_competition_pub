@@ -178,24 +178,7 @@ def ResNet50():
     return ResNet(BottleneckBlock, [3, 4, 6, 3])
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 def VQA_criterion(batch_pred: torch.Tensor, batch_answers: torch.Tensor):
     total_acc = 0.
     for pred, answers in zip(batch_pred, batch_answers):
@@ -327,3 +310,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
